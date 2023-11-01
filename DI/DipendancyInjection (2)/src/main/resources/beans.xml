@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+		https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="student" class="com.spring.DipendancyInjection.Student">
+        <!-- collaborators and configuration for this bean go here -->
+        <constructor-arg name="StudentName" value="Mirowe Bob"/>
+        <constructor-arg name="id" value="21023"/>
+        <constructor-arg name="Family" value="Mirowe's"/>
+    </bean>
+    <bean id="larry" class="com.spring.DipendancyInjection.Student">
+        <constructor-arg name="StudentName" value="larry Kings"/>
+    </bean>
+
+
+
+    <!-- more bean definitions go here -->
+
+</beans>
